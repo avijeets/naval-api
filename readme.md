@@ -1,6 +1,6 @@
 # Naval API
   
-  I decided to write a quick API that outputs quotes from Naval's Twitter profile filled with wisdom and great advice. [Naval's thread](https://twitter.com/naval/status/1002103360646823936) about "getting rich (without getting lucky)" has been referenced countless times and has been a hit on Twitter.
+  I decided to write a quick API that outputs quotes from [Naval's Twitter profile](https://twitter.com/naval/) filled with wisdom and great advice. [Naval's thread](https://twitter.com/naval/status/1002103360646823936) about "getting rich (without getting lucky)" has been referenced countless times and has been a hit on Twitter.
   
   ### Usage
   
@@ -19,16 +19,23 @@
   ### Try
   
   Clone the API:
-  ` git clone https://github.com/avijeets/naval-api`
+  ``` 
+  git clone https://github.com/avijeets/naval-api
+  ```
   
   Then, go into the project directory and install its dependencies:
-  ` npm install `
+  ``` 
+  npm install 
+  ```
   
   You're done! Now, run the API:
-  ` npm start ` 
+  ```
+  npm start 
+  ``` 
   
  ### TODO:
  
  * Return a specified amount of quotes
- * Search for quotes with API call
- * 
+ * Search for quotes with query string
+ * Accomodation for different threads
+ * Get tweet by ID number
