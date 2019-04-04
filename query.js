@@ -1,5 +1,5 @@
 // require all quote collections
-const quotes = require('/quotes/getting-rich.json');
+const quotes = require('./quotes/getting-rich.json');
 
 function allQuotes() {
     return quotes;

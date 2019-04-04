@@ -3,6 +3,11 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const requestLimit = require('express-rate-limit');
+const {
+    allQuotes,
+    randomQuote
+} = require(./query);
+
 
 var index = require('./routes/index');
 
