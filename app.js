@@ -6,13 +6,13 @@ const requestLimit = require('express-rate-limit');
 const {
     allQuotes,
     randomQuote
-} = require(./query);
+} = require('./query');
 
 
 var index = require('./routes/index');
 
 // limit is 20 requests within a minute
-const limit = rateLimit({
+const limit = requestLimit({
       windowMs: 60 * 1000,
       max: 20, 
       message: "Arm yourself with specific knowledge, accountability, and leverage. Oh, and take breaks from requesting data from this API. - Naval Ravikant"
@@ -31,7 +31,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(limit);
 
 app.use('/', index);
-app.use('/users', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
