@@ -6,7 +6,7 @@ function allQuotes() {
 }
 
 function randomQuote() {
-    return quotes[Math.random() * quotes.length];
+    return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
 module.exports = {
