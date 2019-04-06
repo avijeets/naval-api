@@ -9,7 +9,12 @@ function randomQuote() {
     return quotes[Math.floor(Math.random() * quotes.length)];
 }
 
+function idQuote(n) {
+	return quotes[n - 1];
+}
+
 module.exports = {
     allQuotes,
-    randomQuote
+    randomQuote,
+    idQuote
 };

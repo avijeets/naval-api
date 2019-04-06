@@ -5,7 +5,8 @@ const bodyParser = require('body-parser');
 const requestLimit = require('express-rate-limit');
 const {
     allQuotes,
-    randomQuote
+    randomQuote,
+    idQuote
 } = require('./query');
 const index = require('./routes/index');
 
@@ -39,6 +40,10 @@ app.get('/all', (req, res) => {
 
 app.get('/random', (req, res) => {
   res.json(randomQuote());
+});
+
+app.get('/:number', (req, res) => {
+  res.json(idQuote(req.params.number));
 });
 
 // catch 404 and forward to error handler
