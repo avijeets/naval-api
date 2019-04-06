@@ -7,9 +7,7 @@ const {
     allQuotes,
     randomQuote
 } = require('./query');
-
-
-var index = require('./routes/index');
+const index = require('./routes/index');
 
 // limit is 20 requests within a minute
 const limit = requestLimit({
@@ -30,7 +28,18 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(limit);
 
+// Landing Pages
 app.use('/', index);
+
+
+// Routes
+app.get('/all', (req, res) => {
+  res.json(allQuotes());
+});
+
+app.get('/random', (req, res) => {
+  res.json(randomQuote());
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -48,6 +57,10 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+app.listen(3005, process.env.IP, function(){
+  console.log("Server running on port 3005");
 });
 
 module.exports = app;
