@@ -15,6 +15,11 @@
   ```
   /random/
   ```
+
+  Specific quote, by id number:
+  ```
+  /number/
+  ```
   
   ### Try
   
@@ -37,5 +42,5 @@
  
  * Return a specified amount of quotes
  * Search for quotes with query string
- * Accomodation for different threads
- * Get tweet by ID number
+ * ~~Accomodation for different threads~~
+ * ~~Get tweet by ID number~~
