@@ -2,10 +2,30 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='../stylesheets/style.css' />
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="contents">
+    	<p>Welcome to <%= title %>. The <%= title %> is written with Node/Express and renders a dynamic JSON file. </p>
+    	<p>To use the API, you can use the endpoints as listed below:</p>
+    	<ul class="endpoints">
+    		<li><a href="/all">/all</a></li>
+    		<p class="subtitle">
+    			This endpoint lets you access every quote within the specified quote collection. All quotes are stored within a JSON array. 
+    		</p>
+
+    		<li><a href="/random">/random</a></li>
+    		<p class="subtitle">
+    			This endpoint displays a random quote within the specified quote collection. 
+    		</p>
+
+    		<li><a href="/7">/:number</a></li>
+    		<p class="subtitle">
+    			This endpoint displays the requested quote based off of the ID number within the specified quote collection.
+    		</p>
+    	</ul>
+    </div>
+
   </body>
 </html>

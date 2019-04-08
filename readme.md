@@ -1,6 +1,6 @@
 # Naval API
   
-  I decided to write a quick API that outputs quotes from [Naval's Twitter profile](https://twitter.com/naval/) filled with wisdom and great advice. [Naval's thread](https://twitter.com/naval/status/1002103360646823936) about "getting rich (without getting lucky)" has been referenced countless times and has been a hit on Twitter.
+  I decided to write a quick API that outputs quotes from AngelList founder [Naval Ravikant's Twitter profile](https://twitter.com/naval/) filled with wisdom and great advice. [Naval's thread](https://twitter.com/naval/status/1002103360646823936) about "getting rich (without getting lucky)" has been referenced countless times and has been a hit on Twitter.
   
   ### Usage
   
@@ -18,7 +18,7 @@
 
   Specific quote, by id number:
   ```
-  /number/
+  /7/
   ```
   
   ### Try
